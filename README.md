@@ -1,5 +1,6 @@
 # TestRepository
 This s a test repository 
 
-Hi this is the first commit from readme-edit branch.
+Hi,
+this is the first commit from readme-edit branch.
 Yanbin.

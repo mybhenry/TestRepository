@@ -1,10 +1,8 @@
 pipeline {
     agent any
-      parameters ([
-                  parameters([
-                    string(name: 'DEPLOY_ENV', defaultValue: 'TESTING', description: 'The target environment', )
-                   ])
-                ])
+    parameters {
+        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+    }
     stages {
         stage('Test') {
             steps {

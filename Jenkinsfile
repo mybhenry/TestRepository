@@ -7,7 +7,7 @@ pipeline {
         stage('Test') {
             steps {
                 
-                echo ("DEPLOY_ENV: "+DEPLOY_ENV)
+                echo ("PERSON: "+PERSON)
                 bat 'echo "Fail!=="; exit 1'
             }
         }

@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                input 'plasdf'
                 bat 'echo "Fail!=="; exit 1'
             }
         }

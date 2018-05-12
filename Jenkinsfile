@@ -3,16 +3,17 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                properties([
-                  parameters([
-                    string(name: 'DEPLOY_ENV', defaultValue: 'TESTING', description: 'The target environment', )
-                   ])
-                ])
+                
                 echo ("DEPLOY_ENV: "+DEPLOY_ENV)
                 bat 'echo "Fail!=="; exit 1'
             }
         }
     }
+    properties([
+                  parameters([
+                    string(name: 'DEPLOY_ENV', defaultValue: 'TESTING', description: 'The target environment', )
+                   ])
+                ])
     post {
         always {
             echo 'This will always run'

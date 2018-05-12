@@ -2,9 +2,9 @@ pipeline {
     agent any
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-        int(name: 'PERSON', defaultValue: 45, description: 'Who should I say hello to?')
-        boolean(name: 'PERSON', defaultValue: false, description: 'Who should I say hello to?')
-        date(name: 'PERSON',  description: 'Who should I say hello to?')
+        inteter(name: 'age', defaultValue: 45, description: 'age?')
+        boolean(name: 'male', defaultValue: false, description: 'sex?')
+        date(name: 'birth',  description: 'bd?')
     }
     stages {
         stage('Test') {

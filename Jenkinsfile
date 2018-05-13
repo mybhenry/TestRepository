@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo "--- Running ${env.BUILD_ID} on ${env.JENKINS_URL} > sdagrhrty4fgdabc.txt"
+                echo "--- Running ${env.BUILD_ID} on ${env.JENKINS_URL} " >> sdagrhrty4fgdabc.txt
             }
         }
         stage('Build') {

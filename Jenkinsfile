@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Test') {
             steps {                
-                echo ("PERSON: "+PERSON)
+                echo ("PERSON:--- "+${params.PERSON} )
                 bat 'echo "Fail!=="; exit 1'
             }
         }

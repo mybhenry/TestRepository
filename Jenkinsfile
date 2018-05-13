@@ -8,7 +8,7 @@ pipeline {
         stage('Example') {
             steps {
                 echo "--- Running ${env.BUILD_ID} on ${env.JENKINS_URL} branch: ${env.BRANCH_NAME}  GIT_COMMIT : ${env.GIT_COMMIT}" 
-                bat 'echo BRANCH_NAME:${env.BRANCH_NAME} >> BRANCH_NAME.txt' 
+                bat 'echo BRANCH_NAME:${env.BRANCH_NAME}  >> BRANCH_NAME.txt' 
             }
         }
         stage('Build') {

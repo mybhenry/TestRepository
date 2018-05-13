@@ -8,6 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                archiveArtifacts artifacts: 'README.md,zxcZXZXcasdfe.xml', fingerprint: true, onlyIfSuccessful: true
             }
         }
         stage('Test') {

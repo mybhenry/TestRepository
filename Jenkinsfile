@@ -8,7 +8,7 @@ pipeline {
         stage('Example') {
             steps {
                 echo "--- Running ${env.BUILD_ID} on ${env.JENKINS_URL} " 
-                bat 'echo sdfsdf88888888888 >> sdagrhrty4fgdabc.txt' 
+                bat 'echo sdfsdf88888888888 >> sdagrhrty4fgdabc000.txt' 
             }
         }
         stage('Build') {

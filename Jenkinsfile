@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo "--- Running ${env.BUILD_ID} on ${env.JENKINS_URL} >> abx.txt"
+                echo "--- Running ${env.BUILD_ID} on ${env.JENKINS_URL} >> C:\Program Files (x86)\Jenkins\workspace\NewPL\abx.txt"
             }
         }
         stage('Build') {

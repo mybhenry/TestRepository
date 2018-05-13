@@ -6,11 +6,19 @@ pipeline {
         date(name: 'birth',  description: 'bd?')
     }
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                
+                echo 'Building..'
+        }
+        stage('Test') {
+            steps {                
                 echo ("PERSON: "+PERSON)
                 bat 'echo "Fail!=="; exit 1'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }

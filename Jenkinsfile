@@ -2,8 +2,7 @@ pipeline {
     agent any
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-        inteter(name: 'age', defaultValue: 45, description: 'age?')
-        date(name: 'birth',  description: 'bd?')
+        
     }
     stages {
         stage('Build') {
